@@ -13,7 +13,7 @@ public protocol BBPortalProtocol {
     var onDataAvailable: ((Any) -> ())? { get set }
 }
 
-open class BBPortal: BBPortalProtocol
+open class BBPortal2: BBPortalProtocol
 {
     public var onDataAvailable: ((Any) -> ())?
     
