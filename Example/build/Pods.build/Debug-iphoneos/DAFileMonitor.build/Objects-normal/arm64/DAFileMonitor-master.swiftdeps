@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "c0e2a14569133f07d47548a318b01325"
+build_time: [1532101361, 62472000]
+inputs:
+  "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/Pods/DAFileMonitor/DAFileMonitor/Classes/DAFileMonitor.swift": [1532101144, 0]

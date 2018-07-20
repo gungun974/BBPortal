@@ -8,18 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BBPortal'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A library that will enable you to pass data between your extensions and applications.'
 
   s.description      = <<-DESC
-This library is using App Groups as a mechanism to pass data between your extensions and the main app target. You can also pass data between your applications. It doesn't work with watch targets, but it can easily be extended to do so. The main goal of this library is to make passing of data between targets as simple as possible. You give IDs to your portals and when you push data through the portal the data will come out of the other portals with the same ID.
+This library is using App Groups as a mechanism to pass data between your extensions and the main app target. You can also pass data between your applications. It doesn't work with watch targets, but it can easily be extended to do so. The main goal of this library is to make passing of data between targets as simple as possible. You give IDs to your portals and when you push data through the portal the data will come out of the other portals with the same ID. This library was create by Dejan Agostini (bydejan.agostini@gmail.com)
                        DESC
 
-  s.homepage         = 'https://github.com/dagostini/BBPortal'
+  s.homepage         = 'https://github.com/gungun974/BBPortal'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Dejan Agostini' => 'dejan.agostini@gmail.com' }
+  s.author           = { 'gungun974' => 'xfelix974@gmail.com' }
   s.source           = { :git => 'https://github.com/dagostini/BBPortal.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/dagostin'
 
   s.ios.deployment_target = '8.0'
 

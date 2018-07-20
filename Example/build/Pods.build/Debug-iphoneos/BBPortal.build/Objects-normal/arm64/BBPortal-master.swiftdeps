@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "5a13dd6a382bcfcf8598d884ef14054f"
+build_time: [1532101366, 422457000]
+inputs:
+  "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/BBPortal/Classes/BBPortal.swift": [1532101144, 0]
