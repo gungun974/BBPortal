@@ -52,6 +52,7 @@ pod 'BBPortal'
 ## Author
 
 Dejan Agostini, dejan.agostini@gmail.com
+Update by gungun974, xfelix974@gmail.com
 
 ## License
 

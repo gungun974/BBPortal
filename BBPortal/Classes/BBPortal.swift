@@ -2,7 +2,7 @@
 //  BBPortal.swift
 //
 //  Created by Dejan on 30/07/2017.
-//  Copyright © 2017 Dejan. All rights reserved.
+//  Update by gungun974 on 20/07/2018.
 //
 
 import Foundation
@@ -13,7 +13,7 @@ public protocol BBPortalProtocol {
     var onDataAvailable: ((Any) -> ())? { get set }
 }
 
-open class BBPortal: BBPortalProtocol
+open class BBPortal2: BBPortalProtocol
 {
     public var onDataAvailable: ((Any) -> ())?
     
@@ -57,12 +57,12 @@ open class BBPortal: BBPortalProtocol
     public func send(data: Any, onCompleted: ((NSError?) -> ())? = nil) {
         if let url = fileURL() {
             
+            
             portalQueue?.addOperation {
-                [weak self] in
                 var error: NSError?
-                self?.coordinator?.coordinate(writingItemAt: url, options: .forReplacing, error: &error, byAccessor: { (url) in
+                self.coordinator?.coordinate(writingItemAt: url, options: .forReplacing, error: &error, byAccessor: { (url) in
                     
-                    let dictToSave: [String: Any?] = [DictKey.sender.rawValue: self?.objectID,
+                    let dictToSave: [String: Any?] = [DictKey.sender.rawValue: self.objectID,
                                                       DictKey.payload.rawValue: data]
                     
                     let dictData = NSKeyedArchiver.archivedData(withRootObject: dictToSave)
@@ -82,15 +82,14 @@ open class BBPortal: BBPortalProtocol
         }
         self.fileMonitor = DAFileMonitor(withFilePath: filePath)
         self.fileMonitor?.onFileEvent = {
-            [weak self] in
             let dict = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [String: Any?] ?? [:]
             
             // Don't call the closure if you're the one sending the data through the portal.
-            if let senderID = dict[DictKey.sender.rawValue] as? UUID, senderID != self?.objectID {
+            if let senderID = dict[DictKey.sender.rawValue] as? UUID, senderID != self.objectID {
                 guard let payload = dict[DictKey.payload.rawValue], payload != nil else {
                     return
                 }
-                self?.onDataAvailable?(payload!)// Safe to force unwrap because of the guard.
+                self.onDataAvailable?(payload!)// Safe to force unwrap because of the guard.
             }
         }
     }

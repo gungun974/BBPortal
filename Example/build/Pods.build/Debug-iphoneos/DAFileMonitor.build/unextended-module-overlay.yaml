@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/DAFileMonitor/DAFileMonitor.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphoneos/DAFileMonitor.build/unextended-module.modulemap',
+    }]
+  }]
+}
