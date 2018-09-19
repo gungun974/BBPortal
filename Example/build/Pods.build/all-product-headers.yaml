@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/BBPortal/BBPortal.framework/Headers",
+      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphonesimulator/BBPortal/BBPortal.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "BBPortal-Swift.h",
-          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/BBPortal/BBPortal.framework/Headers/BBPortal-Swift.h"
+          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphonesimulator/BBPortal/BBPortal.framework/Headers/BBPortal-Swift.h"
         },
         {
           'type': 'file',
@@ -20,23 +20,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/BBPortal/BBPortal.framework/Modules",
+      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphonesimulator/BBPortal/BBPortal.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphoneos/BBPortal.build/module.modulemap"
+          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphonesimulator/BBPortal.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/DAFileMonitor/DAFileMonitor.framework/Headers",
+      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphonesimulator/DAFileMonitor/DAFileMonitor.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "DAFileMonitor-Swift.h",
-          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/DAFileMonitor/DAFileMonitor.framework/Headers/DAFileMonitor-Swift.h"
+          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphonesimulator/DAFileMonitor/DAFileMonitor.framework/Headers/DAFileMonitor-Swift.h"
         },
         {
           'type': 'file',
@@ -47,12 +47,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/DAFileMonitor/DAFileMonitor.framework/Modules",
+      'name': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphonesimulator/DAFileMonitor/DAFileMonitor.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphoneos/DAFileMonitor.build/module.modulemap"
+          'external-contents': "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphonesimulator/DAFileMonitor.build/module.modulemap"
         }
       ]
     }

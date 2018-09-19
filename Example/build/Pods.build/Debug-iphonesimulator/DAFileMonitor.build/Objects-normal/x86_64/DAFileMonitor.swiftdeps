@@ -1,0 +1,231 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DAFileMonitor"
+provides-nominal:
+- "13DAFileMonitorAAC"
+provides-member:
+- ["13DAFileMonitorAAC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "DAFileMonitor"
+- "DispatchQueue"
+- "DispatchSource"
+- "DispatchSourceFileSystemObject"
+- !private "FileManager"
+- !private "O_EVTONLY"
+- "String"
+- !private "close"
+- !private "open"
+depends-member:
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "FileSystemEvent"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "createFile"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "fileExists"]
+- !private ["s7CVarArgP", "global"]
+- !private ["s7CVarArgP", "makeFileSystemObjectSource"]
+- ["s28CustomDebugStringConvertibleP", "FileSystemEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "createFile"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "fileExists"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- !private ["s28CustomDebugStringConvertibleP", "makeFileSystemObjectSource"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "FileSystemEvent"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "createFile"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "fileExists"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- !private ["s23CustomStringConvertibleP", "makeFileSystemObjectSource"]
+- ["13DAFileMonitorAAC", "Bool"]
+- ["13DAFileMonitorAAC", "DispatchQueue"]
+- ["13DAFileMonitorAAC", "DispatchSource"]
+- ["13DAFileMonitorAAC", "DispatchSourceFileSystemObject"]
+- !private ["13DAFileMonitorAAC", "FileManager"]
+- !private ["13DAFileMonitorAAC", "O_EVTONLY"]
+- ["13DAFileMonitorAAC", "String"]
+- !private ["13DAFileMonitorAAC", "close"]
+- !private ["13DAFileMonitorAAC", "createFile"]
+- ["13DAFileMonitorAAC", "deinit"]
+- !private ["13DAFileMonitorAAC", "dispatchQueue"]
+- !private ["13DAFileMonitorAAC", "eventSource"]
+- !private ["13DAFileMonitorAAC", "fileExists"]
+- !private ["13DAFileMonitorAAC", "filePath"]
+- !private ["13DAFileMonitorAAC", "fileSystemEvent"]
+- ["13DAFileMonitorAAC", "init"]
+- ["13DAFileMonitorAAC", "onFileEvent"]
+- !private ["13DAFileMonitorAAC", "open"]
+- !private ["13DAFileMonitorAAC", "startObservingFileChanges"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["So14DispatchObjectC", "FileSystemEvent"]
+- !private ["So14DispatchObjectC", "global"]
+- !private ["So14DispatchObjectC", "makeFileSystemObjectSource"]
+- !private ["So13DispatchQueueC", "global"]
+- ["So14DispatchSourceC", "FileSystemEvent"]
+- !private ["So14DispatchSourceC", "makeFileSystemObjectSource"]
+- ["So30DispatchSourceFileSystemObjectP", "FileSystemEvent"]
+- !private ["So30DispatchSourceFileSystemObjectP", "cancel"]
+- !private ["So30DispatchSourceFileSystemObjectP", "makeFileSystemObjectSource"]
+- !private ["So30DispatchSourceFileSystemObjectP", "resume"]
+- !private ["So30DispatchSourceFileSystemObjectP", "setCancelHandler"]
+- !private ["So30DispatchSourceFileSystemObjectP", "setEventHandler"]
+- ["So25DispatchSourceMachReceiveP", "FileSystemEvent"]
+- !private ["So25DispatchSourceMachReceiveP", "makeFileSystemObjectSource"]
+- ["So22DispatchSourceMachSendP", "FileSystemEvent"]
+- !private ["So22DispatchSourceMachSendP", "makeFileSystemObjectSource"]
+- ["So28DispatchSourceMemoryPressureP", "FileSystemEvent"]
+- !private ["So28DispatchSourceMemoryPressureP", "makeFileSystemObjectSource"]
+- ["So21DispatchSourceProcessP", "FileSystemEvent"]
+- !private ["So21DispatchSourceProcessP", "makeFileSystemObjectSource"]
+- ["So22DispatchSourceProtocolP", "FileSystemEvent"]
+- !private ["So22DispatchSourceProtocolP", "cancel"]
+- !private ["So22DispatchSourceProtocolP", "makeFileSystemObjectSource"]
+- !private ["So22DispatchSourceProtocolP", "resume"]
+- !private ["So22DispatchSourceProtocolP", "setCancelHandler"]
+- !private ["So22DispatchSourceProtocolP", "setEventHandler"]
+- ["So18DispatchSourceReadP", "FileSystemEvent"]
+- !private ["So18DispatchSourceReadP", "makeFileSystemObjectSource"]
+- ["So20DispatchSourceSignalP", "FileSystemEvent"]
+- !private ["So20DispatchSourceSignalP", "makeFileSystemObjectSource"]
+- ["So19DispatchSourceTimerP", "FileSystemEvent"]
+- !private ["So19DispatchSourceTimerP", "makeFileSystemObjectSource"]
+- ["So25DispatchSourceUserDataAddP", "FileSystemEvent"]
+- !private ["So25DispatchSourceUserDataAddP", "makeFileSystemObjectSource"]
+- ["So24DispatchSourceUserDataOrP", "FileSystemEvent"]
+- !private ["So24DispatchSourceUserDataOrP", "makeFileSystemObjectSource"]
+- ["So29DispatchSourceUserDataReplaceP", "FileSystemEvent"]
+- !private ["So29DispatchSourceUserDataReplaceP", "makeFileSystemObjectSource"]
+- ["So19DispatchSourceWriteP", "FileSystemEvent"]
+- !private ["So19DispatchSourceWriteP", "makeFileSystemObjectSource"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "FileSystemEvent"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "createFile"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "fileExists"]
+- !private ["s9EquatableP", "global"]
+- !private ["s9EquatableP", "makeFileSystemObjectSource"]
+- !private ["s9EquatableP", "write"]
+- !private ["s25ExpressibleByArrayLiteralP", "write"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["So11FileManagerC", "createFile"]
+- !private ["So11FileManagerC", "default"]
+- !private ["So11FileManagerC", "fileExists"]
+- !private ["So14DispatchSourceC0A0E15FileSystemEventV", "write"]
+- ["s8HashableP", "FileSystemEvent"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "createFile"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "fileExists"]
+- !private ["s8HashableP", "global"]
+- !private ["s8HashableP", "makeFileSystemObjectSource"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["So8NSObjectC", "FileSystemEvent"]
+- !private ["So8NSObjectC", "createFile"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "fileExists"]
+- !private ["So8NSObjectC", "global"]
+- !private ["So8NSObjectC", "makeFileSystemObjectSource"]
+- ["So16NSObjectProtocolP", "FileSystemEvent"]
+- !private ["So16NSObjectProtocolP", "cancel"]
+- !private ["So16NSObjectProtocolP", "createFile"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "fileExists"]
+- !private ["So16NSObjectProtocolP", "global"]
+- !private ["So16NSObjectProtocolP", "makeFileSystemObjectSource"]
+- !private ["So16NSObjectProtocolP", "resume"]
+- !private ["So16NSObjectProtocolP", "setCancelHandler"]
+- !private ["So16NSObjectProtocolP", "setEventHandler"]
+- ["So9OS_objectC", "FileSystemEvent"]
+- !private ["So9OS_objectC", "global"]
+- !private ["So9OS_objectC", "makeFileSystemObjectSource"]
+- !private ["s9OptionSetP", "write"]
+- !private ["s16RawRepresentableP", "write"]
+- !private ["s10SetAlgebraP", "write"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "FileSystemEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createFile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileExists"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeFileSystemObjectSource"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+depends-nominal:
+- !private "Sb"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "13DAFileMonitorAAC"
+- !private "s9DecodableP"
+- "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- "So14DispatchSourceC"
+- "So30DispatchSourceFileSystemObjectP"
+- "So25DispatchSourceMachReceiveP"
+- "So22DispatchSourceMachSendP"
+- "So28DispatchSourceMemoryPressureP"
+- "So21DispatchSourceProcessP"
+- "So22DispatchSourceProtocolP"
+- "So18DispatchSourceReadP"
+- "So20DispatchSourceSignalP"
+- "So19DispatchSourceTimerP"
+- "So25DispatchSourceUserDataAddP"
+- "So24DispatchSourceUserDataOrP"
+- "So29DispatchSourceUserDataReplaceP"
+- "So19DispatchSourceWriteP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "So11FileManagerC"
+- !private "So14DispatchSourceC0A0E15FileSystemEventV"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So9OS_objectC"
+- !private "s9OptionSetP"
+- !private "s16RawRepresentableP"
+- !private "s10SetAlgebraP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/Pods/Target Support Files/DAFileMonitor/DAFileMonitor-umbrella.h"
+- "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphonesimulator/DAFileMonitor.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "f51891f8a65c147808c11bf98a16fe50"

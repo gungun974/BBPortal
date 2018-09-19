@@ -59,8 +59,9 @@ open class BBPortal: BBPortalProtocol
             
             
             portalQueue?.addOperation {
-                var error: NSError?
-                self.coordinator?.coordinate(writingItemAt: url, options: .forReplacing, error: &error, byAccessor: { (url) in
+                var error: NSErrorPointer
+                
+                self.coordinator?.coordinate(writingItemAt: url, options: .forReplacing, error: error, byAccessor: { (url) in
                     
                     let dictToSave: [String: Any?] = [DictKey.sender.rawValue: self.objectID,
                                                       DictKey.payload.rawValue: data]
@@ -68,7 +69,7 @@ open class BBPortal: BBPortalProtocol
                     let dictData = NSKeyedArchiver.archivedData(withRootObject: dictToSave)
                     try? dictData.write(to: url)
                     
-                    onCompleted?(error)
+                    onCompleted?(NSError(domain: "Write", code: 0, userInfo: [:]))
                 })
             }
         }

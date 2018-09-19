@@ -21,7 +21,10 @@ depends-top-level:
 - "DAFileMonitor"
 - "Dictionary"
 - !private "FileManager"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSError"
+- !private "NSErrorPointer"
 - "NSFileCoordinator"
 - !private "NSKeyedArchiver"
 - !private "NSKeyedUnarchiver"
@@ -37,6 +40,7 @@ depends-member:
 - !private ["8BBPortalAAC", "DictKey"]
 - !private ["8BBPortalAAC", "FileManager"]
 - ["8BBPortalAAC", "NSError"]
+- !private ["8BBPortalAAC", "NSErrorPointer"]
 - ["8BBPortalAAC", "NSFileCoordinator"]
 - !private ["8BBPortalAAC", "NSKeyedArchiver"]
 - !private ["8BBPortalAAC", "NSKeyedUnarchiver"]
@@ -80,8 +84,9 @@ depends-member:
 - !private ["8BBPortal0A8ProtocolP", "portalQueue"]
 - ["8BBPortal0A8ProtocolP", "send"]
 - !private ["8BBPortal0A8ProtocolP", "startObservingFileChanges"]
-- ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "write"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "write"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addOperation"]
@@ -92,13 +97,16 @@ depends-member:
 - !private ["s7CVarArgP", "coordinate"]
 - !private ["s7CVarArgP", "default"]
 - ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "maxConcurrentOperationCount"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "unarchiveObject"]
-- ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10CollectionP", "write"]
-- ["s10ComparableP", "init"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "write"]
+- ["SL", "init"]
+- ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "addOperation"]
 - !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
 - !private ["s28CustomDebugStringConvertibleP", "appendingPathExtension"]
@@ -109,6 +117,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "coordinate"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "maxConcurrentOperationCount"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
@@ -118,8 +127,10 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "appendingPathComponent"]
 - !private ["s29CustomPlaygroundQuickLookableP", "appendingPathExtension"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "path"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "write"]
@@ -134,6 +145,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "coordinate"]
 - !private ["s23CustomStringConvertibleP", "default"]
 - ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "maxConcurrentOperationCount"]
 - !private ["s23CustomStringConvertibleP", "path"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -142,83 +154,100 @@ depends-member:
 - !private ["13DAFileMonitorAAC", "init"]
 - !private ["13DAFileMonitorAAC", "onFileEvent"]
 - !private ["10Foundation4DataV", "write"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "appendingPathComponent"]
-- !private ["s9DecodableP", "appendingPathExtension"]
-- ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "path"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "write"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "appendingPathComponent"]
-- !private ["s9EncodableP", "appendingPathExtension"]
-- ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "path"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "write"]
-- ["s9EquatableP", "RawValue"]
-- !private ["s9EquatableP", ""]
-- ["s9EquatableP", "_Default_RawValue"]
-- !private ["s9EquatableP", "_findStringSwitchCase"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addOperation"]
-- !private ["s9EquatableP", "appendingPathComponent"]
-- !private ["s9EquatableP", "appendingPathExtension"]
-- !private ["s9EquatableP", "archivedData"]
-- !private ["s9EquatableP", "cancel"]
-- !private ["s9EquatableP", "cancelAllOperations"]
-- !private ["s9EquatableP", "containerURL"]
-- !private ["s9EquatableP", "coordinate"]
-- !private ["s9EquatableP", "default"]
-- !private ["s9EquatableP", "forReplacing"]
-- ["s9EquatableP", "hashValue"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "maxConcurrentOperationCount"]
-- !private ["s9EquatableP", "path"]
-- !private ["s9EquatableP", "payload"]
-- ["s9EquatableP", "rawValue"]
-- !private ["s9EquatableP", "sender"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "unarchiveObject"]
-- !private ["s9EquatableP", "write"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "appendingPathComponent"]
+- !private ["Se", "appendingPathExtension"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "path"]
+- !private ["Se", "subscript"]
+- !private ["Se", "write"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "appendingPathComponent"]
+- !private ["SE", "appendingPathExtension"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "path"]
+- !private ["SE", "subscript"]
+- !private ["SE", "write"]
+- ["SQ", "RawValue"]
+- !private ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addOperation"]
+- !private ["SQ", "appendingPathComponent"]
+- !private ["SQ", "appendingPathExtension"]
+- !private ["SQ", "archivedData"]
+- !private ["SQ", "cancel"]
+- !private ["SQ", "cancelAllOperations"]
+- !private ["SQ", "containerURL"]
+- !private ["SQ", "coordinate"]
+- !private ["SQ", "default"]
+- !private ["SQ", "forReplacing"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "maxConcurrentOperationCount"]
+- !private ["SQ", "path"]
+- !private ["SQ", "payload"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "sender"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "unarchiveObject"]
+- !private ["SQ", "write"]
+- !private ["s5ErrorP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "forReplacing"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["So11FileManagerC", "containerURL"]
-- !private ["So11FileManagerC", "default"]
-- ["s8HashableP", "RawValue"]
-- !private ["s8HashableP", ""]
-- ["s8HashableP", "_Default_RawValue"]
-- !private ["s8HashableP", "_findStringSwitchCase"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addOperation"]
-- !private ["s8HashableP", "appendingPathComponent"]
-- !private ["s8HashableP", "appendingPathExtension"]
-- !private ["s8HashableP", "archivedData"]
-- !private ["s8HashableP", "cancel"]
-- !private ["s8HashableP", "cancelAllOperations"]
-- !private ["s8HashableP", "containerURL"]
-- !private ["s8HashableP", "coordinate"]
-- !private ["s8HashableP", "default"]
-- ["s8HashableP", "hashValue"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "maxConcurrentOperationCount"]
-- !private ["s8HashableP", "path"]
-- !private ["s8HashableP", "payload"]
-- ["s8HashableP", "rawValue"]
-- !private ["s8HashableP", "sender"]
-- !private ["s8HashableP", "unarchiveObject"]
-- !private ["s8HashableP", "write"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So13NSFileManagerC", "containerURL"]
+- !private ["So13NSFileManagerC", "default"]
+- ["SH", "RawValue"]
+- !private ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addOperation"]
+- !private ["SH", "appendingPathComponent"]
+- !private ["SH", "appendingPathExtension"]
+- !private ["SH", "archivedData"]
+- !private ["SH", "cancel"]
+- !private ["SH", "cancelAllOperations"]
+- !private ["SH", "containerURL"]
+- !private ["SH", "coordinate"]
+- !private ["SH", "default"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "maxConcurrentOperationCount"]
+- !private ["SH", "path"]
+- !private ["SH", "payload"]
+- ["SH", "rawValue"]
+- !private ["SH", "sender"]
+- !private ["SH", "subscript"]
+- !private ["SH", "unarchiveObject"]
+- !private ["SH", "write"]
+- !private ["s6HasherV", "combine"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "write"]
+- ["s10MirrorPathP", "init"]
+- !private ["SM", "write"]
 - !private ["So7NSCoderC", "archivedData"]
 - !private ["So7NSCoderC", "unarchiveObject"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So7NSErrorC", "init"]
 - !private ["So17NSFileCoordinatorC", "cancel"]
 - !private ["So17NSFileCoordinatorC", "coordinate"]
 - !private ["So17NSFileCoordinatorC", "init"]
@@ -234,62 +263,77 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "maxConcurrentOperationCount"]
 - !private ["So8NSObjectC", "unarchiveObject"]
-- !private ["So16NSObjectProtocolP", "addOperation"]
-- !private ["So16NSObjectProtocolP", "archivedData"]
-- !private ["So16NSObjectProtocolP", "cancel"]
-- !private ["So16NSObjectProtocolP", "cancelAllOperations"]
-- !private ["So16NSObjectProtocolP", "containerURL"]
-- !private ["So16NSObjectProtocolP", "coordinate"]
-- !private ["So16NSObjectProtocolP", "default"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "maxConcurrentOperationCount"]
-- !private ["So16NSObjectProtocolP", "unarchiveObject"]
-- !private ["So14OperationQueueC", "addOperation"]
-- !private ["So14OperationQueueC", "cancelAllOperations"]
-- !private ["So14OperationQueueC", "init"]
-- !private ["So14OperationQueueC", "maxConcurrentOperationCount"]
+- !private ["So8NSObjectP", "addOperation"]
+- !private ["So8NSObjectP", "archivedData"]
+- !private ["So8NSObjectP", "cancel"]
+- !private ["So8NSObjectP", "cancelAllOperations"]
+- !private ["So8NSObjectP", "containerURL"]
+- !private ["So8NSObjectP", "coordinate"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "maxConcurrentOperationCount"]
+- !private ["So8NSObjectP", "unarchiveObject"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So16NSOperationQueueC", "addOperation"]
+- !private ["So16NSOperationQueueC", "cancelAllOperations"]
+- !private ["So16NSOperationQueueC", "init"]
+- !private ["So16NSOperationQueueC", "maxConcurrentOperationCount"]
 - !private ["s9OptionSetP", "forReplacing"]
-- !private ["s22RandomAccessCollectionP", "write"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "write"]
-- ["s16RawRepresentableP", "RawValue"]
-- !private ["s16RawRepresentableP", ""]
-- ["s16RawRepresentableP", "_Default_RawValue"]
-- !private ["s16RawRepresentableP", "_findStringSwitchCase"]
-- !private ["s16RawRepresentableP", "forReplacing"]
-- ["s16RawRepresentableP", "hashValue"]
-- ["s16RawRepresentableP", "init"]
-- !private ["s16RawRepresentableP", "payload"]
-- ["s16RawRepresentableP", "rawValue"]
-- !private ["s16RawRepresentableP", "sender"]
+- !private ["Sk", "write"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["Sm", "write"]
+- ["SY", "RawValue"]
+- !private ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- !private ["SY", "forReplacing"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- !private ["SY", "payload"]
+- ["SY", "rawValue"]
+- !private ["SY", "sender"]
 - !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
 - !private ["10Foundation20ReferenceConvertibleP", "appendingPathExtension"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "path"]
 - !private ["10Foundation20ReferenceConvertibleP", "write"]
-- ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s8SequenceP", "write"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["ST", "write"]
 - !private ["s10SetAlgebraP", "forReplacing"]
 - !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
 - ["SS", "init"]
-- ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
 - ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["10Foundation3URLV", "appendingPathComponent"]
 - !private ["10Foundation3URLV", "appendingPathExtension"]
 - !private ["10Foundation3URLV", "path"]
 - ["10Foundation4UUIDV", "init"]
-- !private ["So17NSFileCoordinatorC14WritingOptionsV", "forReplacing"]
+- !private ["So31NSFileCoordinatorWritingOptionsV", "forReplacing"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathExtension"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "path"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addOperation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "archivedData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cancel"]
@@ -304,61 +348,69 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
 - !private ["s21_ObjectiveCBridgeableP", "appendingPathExtension"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "path"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "write"]
 - ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "8BBPortalAAC"
 - "8BBPortal0A8ProtocolP"
-- "s23BidirectionalCollectionP"
+- "SK"
 - !private "Sb"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "13DAFileMonitorAAC"
 - !private "10Foundation4DataV"
-- "s9DecodableP"
-- !private "s10DictionaryV"
-- "s9EncodableP"
-- "s9EquatableP"
+- "Se"
+- !private "SD"
+- "SE"
+- "SQ"
+- !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "So11FileManagerC"
-- "s8HashableP"
+- !private "So13NSFileManagerC"
+- "SH"
+- !private "s6HasherV"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So7NSCoderC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So7NSErrorC"
 - !private "So17NSFileCoordinatorC"
 - !private "So15NSKeyedArchiverC"
 - !private "So17NSKeyedUnarchiverC"
 - !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
-- !private "So14OperationQueueC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So16NSOperationQueueC"
 - !private "s9OptionSetP"
-- !private "s22RandomAccessCollectionP"
-- "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- !private "Sk"
+- "Sm"
+- "SY"
 - "10Foundation20ReferenceConvertibleP"
-- "s8SequenceP"
+- "ST"
 - !private "s10SetAlgebraP"
 - !private "s12StaticStringV"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "10Foundation3URLV"
 - "10Foundation4UUIDV"
-- !private "So17NSFileCoordinatorC14WritingOptionsV"
+- !private "So31NSFileCoordinatorWritingOptionsV"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -366,6 +418,7 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
@@ -390,14 +443,15 @@ depends-external:
 - "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Debug-iphoneos/DAFileMonitor/DAFileMonitor.framework/Headers/DAFileMonitor-Swift.h"
 - "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphoneos/BBPortal.build/unextended-module.modulemap"
 - "/Users/gungun974/Documents/Lab/Mobile/Xcode/BBPortal/Example/build/Pods.build/Debug-iphoneos/DAFileMonitor.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "1bb00270bc8d6f90896fcd59f57b1433"
